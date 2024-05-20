@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <style>
+     body{
+         background-image:url("img5.jpg");
+         background-size:cover;
+         background-repeat:no-repeat;
+         background-attachment:scroll;
+        }
+    .text a{
+           padding-left:40px; 
+           padding-right:40px;
+           padding-bottom:30px;
+           padding-top:40px;
+           color:white;
+           display:inline;
+           text-decoration:none;
+           background-color:#444444;
+}
+
+.nav{
+       padding-top: 20px;
+       padding-bottom:30px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       font-weight: 700;
+       font-style: normal;
+       font-size: 25px;
+
+}
+.navbar a {
+    padding: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #444444;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px; 
+    background-color: hsl(220, 29%, 6%); 
+    position: absolute;
+    bottom: -3px; 
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.navbar a:hover::after {
+    width: 100%; 
+}
+.image img{
+     display:relative;
+     background-size:cover;
+}
+.center-text {
+        padding:10px;
+       margin-top: 30px;
+}
+.center-text p {
+         padding-left: 340px;
+         padding-top:100px;
+       color: #444444;
+       margin-top:-12px;
+       font-size: 60px;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.center-text a {
+    display: inline-block;
+    color:white;
+    padding: 20px;
+    margin-left: 650px;
+    background-color: #444444;
+    text-decoration: none;
+    font-weight: 700;
+    animation: bounce 2s infinite;
+}
+      
+.nav{
+       padding-top: 20px;
+       padding-bottom:30px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       font-weight: 700;
+       font-style: normal;
+       font-size: 25px;
+
+}
+.booking {
+  margin-top:250px;
+  margin-left:100px;
+  margin-right:100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.booking > div {
+  background-color: #444444;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+  color:white;
+}
+#search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  width: 200px; 
+}
+
+#search-bar:hover,
+#search-bar:focus {
+  border-color: #66afe9; 
+}
+
+#date-bar {
+  padding: 8px 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 16px;
+  width: 200px;
+}
+#submit-button {
+  padding: 10px 20px; 
+  background-color:rgb(34, 143, 151); 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 16px;
+  cursor: pointer; 
+  margin-top: 50px;
+}
+
+.social-icons a {
+            margin: 0 5px;
+            color: #333;
+            font-size: 40px;
+            text-decoration: none;
+        }
+form-control{
+      margin:10px;
+}
+</style>
+    </head>
+<body>
+ <head>
+  <div class="nav">
+    <div class="text">
+         <a href="tour.html">Vacation</a>
+    </div>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Drestination</a>
+        <a href="">Blog</a>
+        <a href="">sign in</a>
+    </div>
+  </div>
+ </head>
+
+    
+     <div class="center-text">
+         
+         <p class="txt">make your tour amazing with us</p>
+         <a href="" class="ani">read more</a>
+     </div>
+<form>
+  <div class="booking">
+    <div class="sub">
+        <p>destination</p>
+        <input type="text" id="search-bar" placeholder="Search...">
+
+    </div>
+    <div>
+        <p>check in date</p>
+        <input type="date" placeholder="checkin" name="check-in" id="date-bar">
+    </div>
+    <div>
+        <p>check out date</p>
+        <input type="date" name="check-out" id="date-bar">
+    </div>
+    <div>
+        <input type="submit" value="submit" class="form-control" id="submit-button">
+    </div>
+</div>
+<h2 >Conatct us on</h2>
+<div class="social-icons"style="margin-left=50px;">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+
+</div>
+
+<form>
+</body>
+</html>
